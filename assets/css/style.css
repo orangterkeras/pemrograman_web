@@ -1,0 +1,407 @@
+/* Buat Variabel Warna */
+:root {
+  --primary: #315cdd;
+  --bg: #ffffff;
+  --nav: #9bd2f5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #fff;
+  color: black;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between; /* horizontal */
+  align-items: center; /* vertical */
+  padding: 0.1rem 7%; /* paddingnya 1.4 * 16px dan space kiri kanan ada 7%*/
+  background-color: var(--nav);
+  border-bottom: 1px solid #513c28;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+.navbar .navbar-logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .navbar-logo img {
+  width: 50px;
+  margin-right: 10px;
+}
+
+.navbar .navbar-logo .logo-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar .navbar-logo .logo-text span {
+  font-size: 1.2rem;
+  color: #000480;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.navbar .navbar-nav a {
+  display: inline-block;
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin: 0 2rem;
+  color: black;
+}
+
+.navbar .navbar-nav a:hover {
+  display: inline-block;
+  padding: 0.3rem 1rem;
+  color: #fff;
+  background-color: var(--primary);
+  border-radius: 0.5rem;
+}
+
+/* .navbar .navbar-nav a::after {
+  content: "";
+  color: #fff;
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid var(--primary);
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+  transform: scaleX(0.5);
+  color: #fff;
+} */
+
+.navbar .navbar-extra a {
+  color: black;
+  margin: 0 0.5rem;
+}
+
+.navbar .navbar-extra a:hover {
+  color: var(--primary);
+}
+
+#hamburger-menu {
+  display: none;
+}
+
+/* About Section */
+.about {
+  padding: 8rem 7% 1.4rem;
+}
+
+.about h2 {
+  text-align: center;
+  font-size: 2.6rem;
+  margin-bottom: 3rem;
+}
+
+.about h2 span {
+  color: var(--primary);
+}
+
+.about .row {
+  display: flex;
+}
+
+.about .row .about-img {
+  flex: 1 1 45rem;
+}
+
+.about .row .about-img img {
+  width: 100%;
+  border-radius: 1%;
+  border: #000000 1px solid;
+}
+
+.about .row .content {
+  flex: 1 1 35rem;
+  padding: 0 1rem;
+}
+
+.about .row .content h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.about .row .content p {
+  margin-bottom: 0.8rem;
+  font-size: 1.3rem;
+  line-height: 1.6;
+  text-align: justify;
+}
+.about .row .content a {
+  display: inline-block;
+  padding: 0.3rem 1rem;
+  font-size: 1.3rem;
+  color: #fff;
+  background-color: var(--primary);
+  border-radius: 0.5rem;
+}
+
+/* form */
+/* Tabel form */
+.form {
+  font-family: "Poppins", sans-serif;
+  width: 80%;
+  margin: 100px auto;
+  padding: 40px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.form h1 {
+  text-align: center;
+}
+
+.form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form .form-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.form .form-group {
+  flex: 1;
+}
+
+.form select,
+.form input[type="text"],
+.form input[type="date"],
+.form textarea,
+.form input[type="file"] {
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 5px;
+}
+
+/* .form input[type="date"],
+.form input#tempat_lahir{
+  width: 45%;
+} */
+
+.form button[type="submit"] {
+  width: 25%;
+  font-size: 20px;
+  align-items: center;
+  background-color: #7700ff;
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.form button[type="submit"]:hover {
+  background-color: #9bd2f5;
+  color: black;
+}
+
+
+/* Hasil Section */
+.hasil {
+  font-family: "Poppins", sans-serif;
+  width: 80%;
+  margin: 100px auto 20px auto;
+  padding: 20px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.styled-table {
+  font-family: "Poppins", sans-serif;
+  width: 90%;
+  border: 1px solid black;
+  margin: 100px auto;
+  padding: 10px;
+  margin: 25px auto;
+  font-size: 0.9em;
+}
+
+.styled-table thead tr {
+  background-color: #4310e7;
+  color: #ffffff;
+  text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+  padding: 12px 15px;
+}
+
+.styled-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+/* .styled-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+} */
+
+.styled-table tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+
+.styled-table tbody tr.active-row {
+  font-weight: bold;
+  color: #009879;
+}
+
+
+
+
+/* Footer */
+footer {
+  background-color: var(--nav);
+  text-align: center;
+  padding-top: 0px;
+  margin-top: 3rem;
+  padding: 1rem 0 1rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+footer .socials a {
+  color: #000000;
+  margin: 1rem;
+}
+
+footer .socials a:hover,
+footer .links a:hover {
+  color: var(--primary);
+}
+
+footer .links {
+  margin-bottom: 1.4rem;
+}
+
+footer .links a {
+  color: #000000;
+  padding: 0.7rem 1rem;
+}
+
+footer .credit {
+  font-size: 0.8rem;
+}
+footer .credit a {
+  color: black;
+  font-weight: 700;
+}
+
+/* Media Queries */
+/* Laptop */
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  #hamburger-menu {
+    display: inline-block;
+  }
+
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: transparent;
+    width: 30rem;
+    height: 100vh;
+    transition: 0.3s;
+    backdrop-filter: blur(10px);
+  }
+
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+
+  .navbar .navbar-nav a {
+    color: var(--primary);
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+
+  .navbar .navbar-nav a {
+    color: black;
+  }
+
+  .navbar .navbar-nav a::after {
+    transform-origin: 0 0;
+  }
+
+  .navbar .navbar-nav a:hover:after {
+    transform: scaleX(0.2);
+  }
+}
+
+/* Mobile Phone */
+@media (max-width: 550px) {
+  html {
+    font-size: 62.5%;
+  }
+  .about .row {
+    flex-wrap: wrap;
+    padding: 1rem 0 1rem;
+    /* margin-bottom: 700px; */
+  }
+
+  .about .row .about-img img {
+    height: 24rem;
+    width: 100%;
+    object-position: center;
+  }
+  .about .row .content {
+    padding-top: 5px;
+  }
+  .about .row .content h3 {
+    text-align: center;
+  }
+  /* Form */
+  .form {
+    width: 90%;
+    padding: 1rem;
+  }
+
+  .form input[type="submit"] {
+    width: 15%;
+    font-size: 10px;
+  }
+}
